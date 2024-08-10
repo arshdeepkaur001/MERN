@@ -5,14 +5,16 @@ import Counter from './functions/Counter';
 import FullName from './functions/FullName';
 import Combobox from './functions/Combobox';
 import CheckBox from './functions/Checkbox';
+import ImmerReducer from './functions/ImmerReducer';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Counter></Counter>
+    {/* <Counter></Counter>
     <FullName></FullName>
     <Combobox></Combobox>
-    <CheckBox></CheckBox>
+    <CheckBox></CheckBox> */}
+    <ImmerReducer></ImmerReducer>
   </React.StrictMode>
 );
