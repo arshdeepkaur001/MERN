@@ -9,12 +9,18 @@ function ToDo() {
   };
 
   const list_items = () => {
-    setitems((oldItems) => {
-      return [...oldItems, inputlist];
-    });
-    setInputList("");
+    if (inputlist.trim() == "")
+    {
+      alert("Please enter a valid value")
+    }
+    else if (inputlist.trim() !== "") {
+      setitems((oldItems) => {
+        return [...oldItems, inputlist];
+      });
+      setInputList("");
+    }
   };
-
+  
   const deleteItems = (id) => {
     console.log("deleted");
     setitems((oldItems) => {
